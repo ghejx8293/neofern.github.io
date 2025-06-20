@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEOFERN - Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #00a86b, #005f3c);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .login-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00c17b;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #009f66;
+    }
+
+    .language-switcher {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .language-switcher a {
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .decor-shape {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      top: 20px;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="decor-shape"></div>
+  <div class="login-container">
+    <h1>NEOFERN</h1>
+    <div class="form-group">
+      <input type="email" placeholder="Email / البريد الإلكتروني / Correo electrónico" />
+    </div>
+    <div class="form-group">
+      <input type="password" placeholder="Password / كلمة المرور / Contraseña" />
+    </div>
+    <button>Login / تسجيل الدخول / Iniciar sesión</button>
+    <div class="language-switcher">
+      <a>العربية</a>
+      <a>English</a>
+      <a>Español</a>
+    </div>
+  </div>
+</body>
+</html>
 
